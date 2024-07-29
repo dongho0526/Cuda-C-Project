@@ -1,0 +1,43 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 7872eb2013b8c2c814eab96d25dfa97428d3c374e8efb0e425f0551a62a00510
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2023-05-04
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0f1ae497cac53cf472eabaddd35a8b9edbdb37517414d669cfdba0f33cc65920
+Status: install ok installed
+
+Package: fmt
+Version: 10.2.1
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 74a08c74fb815beac381ac2b3282e38c3fc7e7f3cee61252f4d166468de9fa69
+Description: Formatting library for C++. It can be used as a safe alternative to printf or as a fast alternative to IOStreams.
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0d20289868616fb9e5cacba13e1cd8c9c0aaa9a535d933e7cba36e6023bf6598
+Description: A compression library
+Status: install ok installed
+
+Package: libpng
+Version: 1.6.43
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 5db6bdd205bc020105983429d8face9dd3746c33a2843f0db466e428f2a4a7ef
+Description: libpng is a library implementing an interface for reading and writing PNG (Portable Network Graphics) format files
+Status: install ok installed
+
